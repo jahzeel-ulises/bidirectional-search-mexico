@@ -1,10 +1,13 @@
-from bidirectional_class import BidirectionalSearch
-from graph import Problem
-from graph import State
-import pygame
+from src.bidirectional_class import BidirectionalSearch
+from src.graph import Problem
+from src.graph import State
 import time
 from tkinter import messagebox
 import json
+
+from os import environ
+environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
+import pygame
 
 def motion(initial:str,final:str)->None:
     """Display the animation of the searching algorithm.

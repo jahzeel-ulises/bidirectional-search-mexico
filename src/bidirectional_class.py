@@ -1,6 +1,6 @@
-from graph import Node
-from graph import Problem
-from graph import State
+from src.graph import Node
+from src.graph import Problem
+from src.graph import State
 
 class BidirectionalSearch():
     def __init__(self,actions,state_i:State,state_f:State)->None:
